@@ -17,16 +17,16 @@
     <tr>
       <th>Id</th>
       <th>Name</th>
-      <th>Email</th>
-      <th>Mobile</th>
+      <th>Brand</th>
+      <th>Price</th>
     </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.email}}</td>
-        <td>{{user.mobile}}</td>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.brand}}</td>
+        <td>{{product.price}}</td>
       </tr>
     </tbody>
   </table>
@@ -34,4 +34,5 @@
 
 </body>
 </html>
+
 
