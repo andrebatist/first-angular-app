@@ -6,6 +6,7 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 import {FormsModule} from "@angular/forms";
+import {ProductService} from "./product.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {FormsModule} from "@angular/forms";
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
